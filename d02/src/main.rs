@@ -67,17 +67,11 @@ fn score_2((a, res): (u8, u8)) -> usize {
 fn main() -> Result<()> {
     let input = std::io::read_to_string(stdin())?;
 
-    let r: usize = input.lines()
-        .map(parse_line)
-        .map(score)
-        .sum();
+    let r: usize = input.lines().map(parse_line).map(score).sum();
 
     println!("{r}");
 
-    let r: usize = input.lines()
-        .map(parse_line)
-        .map(score_2)
-        .sum();
+    let r: usize = input.lines().map(parse_line).map(score_2).sum();
 
     println!("{r}");
 
