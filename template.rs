@@ -1,3 +1,5 @@
+#![allow(unused_imports)]
+
 use eyre::Result;
 use itertools::Itertools;
 
