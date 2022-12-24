@@ -17,3 +17,8 @@ fn main() -> Result<()> {
     // println!("{r}");
     Ok(())
 }
+
+eyre = "0.6.8"
+itertools = "0.10.5"
+ndarray = "0.15.6"
+nom = "7.1.1"
